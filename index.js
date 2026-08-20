@@ -80,7 +80,6 @@ app.get("/api/tabuada/:numero", (req, res) => {
 
 
 
-
 // POST e PULL
 
 // Exemplo Post
@@ -90,7 +89,6 @@ app.post("/api/somar", (req, res) => {
 
   res.send({ mesage: num1 + num2 })
 })
-
 
 
 
@@ -136,10 +134,7 @@ app.get("/api/:divisao/:num1/:num2", (req, res) => {
 app.get("/api/multiplicacao/:num1/:num2", (req, res) => {
     const num1 = Number(req.params.num1)
     const num2 = Number(req.params.num2)
-
-    const resultadoMultip = (num1 * num2);
-
-    res.send({message:resultadoMultip})
+    res.send({message:num1 * num2})
 })
 
 
